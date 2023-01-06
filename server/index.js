@@ -17,7 +17,7 @@ app.post('/auth/register', registerValidation, register);
 
 async function start() {
   try {
-    // mongoose.set("strictQuery", false);
+    // mongoose.set("strictQuery", false); //
     await mongoose.connect(
       `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_NAME}.wiew97m.mongodb.net/?retryWrites=true&w=majority`
     );
