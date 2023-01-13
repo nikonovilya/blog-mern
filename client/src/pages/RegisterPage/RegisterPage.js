@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../components/Logo/Logo';
 import Input from '../../components/UI/Input/Input';
-import Checkbox from '../../components/UI/Checkbox/Checkbox';
 
 const RegisterPage = () => {
   return (
@@ -40,7 +39,7 @@ const RegisterPage = () => {
               type='email'
               label='Email'
               placeholder='Email'
-              autoсomplete="email"
+              autoсomplete='email'
               errorMessage='Введите верный email'
             />
             <Input
@@ -49,7 +48,7 @@ const RegisterPage = () => {
               type='password'
               label='Пароль'
               placeholder='Пароль'
-              autoсomplete="password"
+              autoсomplete='password'
               errorMessage='Введите верный пароль'
             />
           </div>
@@ -57,10 +56,20 @@ const RegisterPage = () => {
           <div className='mt-6'>
             <button
               type='submit'
-              className='flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700'
+              className='flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 transition-colors duration-300'
             >
               Регистрация
             </button>
+          </div>
+
+          <div className='mt-3 text-sm'>
+            <span>Есть аккаунт? </span>
+            <Link
+              to='/login'
+              className='font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-300'
+            >
+              Войти
+            </Link>
           </div>
         </form>
       </div>

@@ -14,7 +14,7 @@ const LoginPage = () => {
             Вход в аккаунт
           </h2>
         </div>
-        <form className='last:mt-2' action='#' method='POST'>
+        <form action='#' method='POST'>
           <div className='space-y-3'>
             <Input
               id='email'
@@ -45,8 +45,8 @@ const LoginPage = () => {
 
             <div className='text-sm'>
               <Link
-                to='#'
-                className='font-medium text-indigo-600 hover:text-indigo-500'
+                to='/recovery'
+                className='font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-300'
               >
                 Забыли пароль?
               </Link>
@@ -56,7 +56,7 @@ const LoginPage = () => {
           <div className='mt-6'>
             <button
               type='submit'
-              className='flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700'
+              className='flex w-full justify-center rounded-md bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 transition-colors duration-300'
             >
               Войти
             </button>
@@ -65,8 +65,8 @@ const LoginPage = () => {
           <div className='mt-3 text-sm'>
             <span>Нет аккаунта? </span>
             <Link
-              to='#'
-              className='font-medium text-indigo-600 hover:text-indigo-500'
+              to='/register'
+              className='font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-300'
             >
               Регистрация
             </Link>

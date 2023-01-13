@@ -5,12 +5,12 @@ const Logo = ({ link }) => {
   return link ? (
     <Link
       to='/'
-      className='inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-800'
+      className='inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-800 transition-colors duration-300'
     >
       NIKON BLOG
     </Link>
   ) : (
-    <div className='inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-base font-medium text-white shadow-sm'>
+    <div className='inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-base font-medium text-white shadow-sm'>
       NIKON BLOG
     </div>
   );

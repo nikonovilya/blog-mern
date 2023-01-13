@@ -16,13 +16,13 @@ const Header = () => {
               <>
                 <Link
                   to='/create'
-                  className='inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700'
+                  className='inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 transition-colors'
                 >
                   Написать статью
                 </Link>
                 <Link
                   to='/'
-                  className='ml-2 inline-flex items-center justify-center rounded-md bg-rose-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-rose-7 00'
+                  className='ml-2 inline-flex items-center justify-center rounded-md bg-rose-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-rose-700 transition-colors duration-300'
                 >
                   Выйти
                 </Link>
@@ -31,13 +31,13 @@ const Header = () => {
               <>
                 <Link
                   to='/login'
-                  className='font-medium text-base text-gray-500 hover:text-gray-900'
+                  className='font-medium text-base text-gray-500 hover:text-gray-900 transition-colors duration-300'
                 >
                   Войти
                 </Link>
                 <Link
                   to='/register'
-                  className='ml-8 inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700'
+                  className='ml-8 inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 transition-colors duration-300'
                 >
                   Создать аккаунт
                 </Link>

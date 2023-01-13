@@ -41,9 +41,10 @@ export const getOne = async (req, res) => {
 
 export const create = async (req, res) => {
   try {
-    const { title, content, tags, imageUrl } = req.body;
+    const { title, description, content, tags, imageUrl } = req.body;
     const post = new Post({
       title,
+      description,
       content,
       tags,
       imageUrl,
@@ -83,7 +84,7 @@ export const remove = async (req, res) => {
 export const update = async (req, res) => {
   try {
     const postId = req.params.id;
-    const { title, content, tags, imageUrl } = req.body;
+    const { title, description, content, tags, imageUrl } = req.body;
 
     await Post.updateOne(
       {
@@ -91,6 +92,7 @@ export const update = async (req, res) => {
       },
       {
         title,
+        description,
         content,
         tags,
         imageUrl,
