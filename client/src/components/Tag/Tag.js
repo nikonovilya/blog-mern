@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tag = ({ name }) => {
   return (
-    <span className='px-3 py-1 bg-gray-900 rounded-md text-base text-white'>
+    <span className='px-3 py-1 rounded-md text-xs font-medium uppercase tracking-wider text-white'>
       {name}
     </span>
   );
