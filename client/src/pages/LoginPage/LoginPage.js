@@ -6,11 +6,11 @@ import Checkbox from '../../components/UI/Checkbox/Checkbox';
 
 const LoginPage = () => {
   return (
-    <div className='flex items-center justify-center pt-20 pb-12 px-4'>
+    <div className='flex items-center justify-center px-4 pt-20 pb-12'>
       <div className='w-full max-w-md space-y-8'>
         <div className='flex flex-col items-center'>
           <Logo />
-          <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
+          <h2 className='mt-6 text-3xl font-bold tracking-tight text-center text-gray-900'>
             Вход в аккаунт
           </h2>
         </div>
@@ -41,12 +41,13 @@ const LoginPage = () => {
               id='rememberMe'
               name='rememberMe'
               label='Запомнить меня'
+              defaultChecked
             />
 
             <div className='text-sm'>
               <Link
                 to='/recovery'
-                className='font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-300'
+                className='font-medium text-indigo-600 transition-colors duration-300 hover:text-indigo-500'
               >
                 Забыли пароль?
               </Link>
@@ -56,7 +57,7 @@ const LoginPage = () => {
           <div className='mt-6'>
             <button
               type='submit'
-              className='flex w-full justify-center rounded-md bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 transition-colors duration-300'
+              className='flex justify-center w-full px-4 py-2 text-sm font-medium text-white transition-colors duration-300 bg-indigo-600 rounded-md hover:bg-indigo-700'
             >
               Войти
             </button>
@@ -66,7 +67,7 @@ const LoginPage = () => {
             <span>Нет аккаунта? </span>
             <Link
               to='/register'
-              className='font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-300'
+              className='font-medium text-indigo-600 transition-colors duration-300 hover:text-indigo-500'
             >
               Регистрация
             </Link>

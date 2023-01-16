@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='w-full h-0.5 mt-16 mb-16 bg-gray-100'></div>
+          <div className='w-full h-0.5 mt-16 mb-16 bg-gray-200'></div>
 
           <div className="flex justify-center gap-x-10">
             <span>© 2023 Nikonov Ilya</span>
